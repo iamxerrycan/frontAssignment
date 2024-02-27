@@ -6,19 +6,16 @@ body {
 }
 
 .headerclass {
-  width: 600px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ff6b82;
-  top: 39px;
-  left: 59px;
 }
 
 span.horizontal-left,
 span.horizontal-right {
-  width: 150px;
+  width: 180px;
   height: 2px;
   background-color: #c8c8c8;
 }
@@ -28,50 +25,217 @@ main {
   margin: 20px auto;
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .box-container {
   border: 1px solid #ccc;
   padding: 10px;
+  height: auto;
 }
 
 .box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  height: 100px;
 }
 
 .unit {
-  width: 170px;
+  width: 250px;
 }
 
 .unit-off {
   display: flex;
+  margin-top: 25px;
   justify-content: space-between;
-  flex-direction: row;
   width: 100%;
+  font-weight: 600;
 }
 
 .unit-off div {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 17px;
-  text-align: left;
-  width: 80px;
-  height: 25px;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  width: 80px;
 }
 
 .unitofff {
   background-color: #ff6b82;
   color: #ffffff;
-  width: 100%;
-  height: 100%;
-  padding: 0;
+  width: 110%;
+  font-size: medium;
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+}
+
+.unitoff {
+  color: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+    font-size: 25px;
+  font-weight: 600;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.price p {
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox-round {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ff6b82;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.checkbox-round:checked {
+  background-color: #ff6b82;
+  border: 2px solid #ff6b82;
+  padding: 0.6em;
+}
+
+.standard-price {
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+/* ===========================select========================== */
+
+.size-color-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 350px;
+}
+
+.size-section,
+.color-section .indicate-section {
+  flex: 1;
+}
+
+.size-color-section {
+  display: flex;
+  /* margin-top: 20px;
+  margin-bottom: 30px; */
+  margin-left: 30px;
+  flex-direction: column;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.indicate-section p,
+.size-section h3,
+.color-section h3 {
+    font-size: 25px;
+  color: #333;
+  font-weight: 400;
+  padding: 0;
+  height: 25px;
+}
+
+.indicate-section p{
+    justify-content: flex-start;
+}
+
+.size-section select,
+.color-section select {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+.optionhead,
+.optionmenu {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.optionhead {
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.optionmenu {
+    font-size: 25px;
+  justify-content: space-evenly;
+  margin-left: 50px;
+}
+
+.price p del {
+  color: #999;
+  text-decoration: line-through;
+  margin: 0;
+  font-size: large;
+  font-weight: lighter;
+  align-items: start;
+}
+
+/* 
+===========================================delevery and ammout========================== */
+
+.deliverycontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight:400;
+}
+
+.deliverycontainer p:first-child{
+    color: #ff6b82;
+}
+
+/* 
+================================================button======================================= */
+
+button{
+    width: 100%;
+    background-color: #ff6b82;
+    border-style: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    align-items: center;
+    color: #ffffff;
+    justify-content: center;
+    height: 40px;
+}
+
+button span{
+    margin-right: 10px;
 }
