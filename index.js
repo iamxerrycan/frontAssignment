@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     unitCheckbox3rd.checked = false;
     sizeColorSection2nd.style.display = "none";
     sizeColorSection3rd.style.display = "none";
+    mainContainer3rd.style.border = "1px solid #ccc";
+    mainContainer2nd.style.border = "1px solid #ccc";
 
     sizeColorSection.style.display = unitCheckbox.checked ? "flex" : "none";
     var borderColor = unitCheckbox.checked ? "#FF6B82" : "#ccc";
@@ -36,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
     unitCheckbox3rd.checked = false;
     sizeColorSection.style.display = "none";
     sizeColorSection3rd.style.display = "none";
+    mainContainer3rd.style.border = "1px solid #ccc";
+    mainContainer.style.border = "1px solid #ccc";
 
     sizeColorSection2nd.style.display = unitCheckbox2nd.checked ? "flex" : "none";
     var borderColor = unitCheckbox2nd.checked ? "#FF6B82" : "#ccc";
@@ -49,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
     unitCheckbox2nd.checked = false;
     sizeColorSection.style.display = "none";
     sizeColorSection2nd.style.display = "none";
+    mainContainer.style.border = "1px solid #ccc";
+    mainContainer2nd.style.border = "1px solid #ccc";
 
     sizeColorSection3rd.style.display = unitCheckbox3rd.checked ? "flex" : "none";
     var borderColor = unitCheckbox3rd.checked ? "#FF6B82" : "#ccc";
