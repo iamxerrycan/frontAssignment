@@ -7,6 +7,7 @@ body {
 
 .headerclass {
   height: 50px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +28,7 @@ main {
   padding: 20px;
 }
 
-.box-container {
+.box-container , .box-container2nd{
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 20px;
@@ -94,6 +95,7 @@ main {
 }
 
 .checkbox-round {
+  margin-top: 10px !important;
   width: 1.5em;
   height: 1.5em;
   background-color: white;
@@ -118,7 +120,7 @@ main {
 .standard-price {
   margin: 0;
   padding: 0;
-  margin-left: 50px;
+  margin-left: 55px;
   font-family: Inter;
   font-size: 25px;
   font-weight: 400;
@@ -126,25 +128,19 @@ main {
 
 /* ===========================select========================== */
 
-.size-color-section {
+.size-color-section , .size-color-section2nd {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   display: none;
   width: 350px;
+  margin-left: 30px;
+  flex-direction: column;
 }
 
 .size-section,
 .colour-section .indicate-section {
   flex: 1;
-}
-
-.size-color-section {
-  display: flex;
-  /* margin-top: 20px;
-  margin-bottom: 30px; */
-  margin-left: 30px;
-  flex-direction: column;
 }
 
 select {
@@ -157,13 +153,15 @@ select {
 
 #size-size{
   font-size: 20px;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .size-option{
   font-size: 16px;
+  width: 60px;
+  padding: 0;
+  margin: 0;
 }
-
 
 .indicate-section p,
 .size-section h3,
@@ -172,7 +170,6 @@ select {
   color: #333;
   font-weight: 400;
   padding: 0;
-  height: 25px;
 }
 
 .indicate-section p{
@@ -181,7 +178,7 @@ select {
 
 .size-section select,
 .colour-section select {
-  width: 100%;
+  width: 85%;
   height: 50px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -198,14 +195,16 @@ select {
 }
 
 .optionhead {
-  justify-content: space-around;
-  margin-left: 20px;
+  justify-content: space-between;
+  margin-right: 110px !important;
+  margin-left: 28px;
 }
 
 .optionmenu {
     font-size: 25px;
-  justify-content: space-evenly;
-  margin-left: 50px;
+    height: auto;
+  justify-content: space-between;
+  /* margin-left: 50px; */
 }
 
 .price p del {
