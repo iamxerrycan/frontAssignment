@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
- 
 }
 
 .headerclass {
@@ -29,7 +28,9 @@ main {
   padding: 20px;
 }
 
-.box-container , .box-container2nd , .box-container3rd{
+.box-container,
+.box-container2nd,
+.box-container3rd {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 20px;
@@ -66,7 +67,7 @@ main {
 .unit-val {
   background-color: #ff6b82;
   color: #ffffff;
-  
+
   font-size: medium;
   display: flex;
   justify-content: center;
@@ -82,7 +83,7 @@ main {
 }
 
 .price {
-    font-size: 25px;
+  font-size: 25px;
   font-weight: 600;
   color: #000000;
   display: flex;
@@ -115,7 +116,6 @@ main {
   border: 2px solid #ff6b82;
   padding: 0.4em;
   box-shadow: 0 0 0 0.2em inset #fff;
-
 }
 
 .standard-price {
@@ -129,7 +129,9 @@ main {
 
 /* ===========================select========================== */
 
-.size-color-section , .size-color-section2nd , .size-color-section3rd{
+.size-color-section,
+.size-color-section2nd,
+.size-color-section3rd {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
@@ -140,8 +142,8 @@ main {
   flex-direction: column;
 }
 
-.size-section, .size-section2nd
-.colour-section .indicate-section .size-section3rd{
+.size-section,
+.size-section2nd .colour-section .indicate-section .size-section3rd {
   flex: 1;
 }
 
@@ -153,12 +155,12 @@ select {
   box-sizing: border-box;
 }
 
-#size-size{
+#size-size {
   font-size: 20px;
   margin-right: 5px;
 }
 
-.size-option{
+.size-option {
   font-size: 16px;
   width: 60px;
   padding: 0;
@@ -167,26 +169,31 @@ select {
 
 .indicate-section p,
 .size-section h3,
-.colour-section h3 , .size-section2nd h3 , .size-color-section3rd h3{
-    font-size: 25px;
+.colour-section h3,
+.size-section2nd h3,
+.size-color-section2nd h3,
+.size-color-section3rd h3 {
+  font-size: 25px;
   color: #333;
   font-weight: 400;
   padding: 0;
 }
 
-.indicate-section p{
-    justify-content: flex-start;
+.indicate-section p {
+  justify-content: flex-start;
 }
 
 .size-section select,
-.colour-section select , .size-section2nd select , .size-color-section3rd select{
+.colour-section select,
+.size-section2nd select,
+.size-color-section2nd select,
+.size-color-section3rd select {
   width: 85%;
   height: 50px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 
 .optionhead,
 .optionmenu {
@@ -203,8 +210,8 @@ select {
 }
 
 .optionmenu {
-    font-size: 25px;
-    height: auto;
+  font-size: 25px;
+  height: auto;
   justify-content: space-between;
   /* margin-left: 50px; */
 }
@@ -221,57 +228,54 @@ select {
 /* 
 ===========================================delevery and ammout========================== */
 
-.deliverycontainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 25px;
-    font-weight:400;
+.deliverycontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  font-weight: 400;
 }
 
-.deliverycontainer p:first-child{
-    color: #ff6b82;
+.deliverycontainer p:first-child {
+  color: #ff6b82;
 }
 
 /* 
 ================================================button======================================= */
 
-button{
-    width: 100%;
-    background-color: #ff6b82;
-    border-style: none;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    align-items: center;
-    color: #ffffff;
-    justify-content: center;
-    height: 40px;
+button {
+  width: 100%;
+  background-color: #ff6b82;
+  border-style: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  align-items: center;
+  color: #ffffff;
+  justify-content: center;
+  height: 40px;
 }
 
-button span{
-    margin-right: 10px;
+button span {
+  margin-right: 10px;
 }
-
-
-
 
 /* ==================================2nd option menu================================ */
 
-.optionmenu2nd{
+.optionmenu2nd {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.size-section2nd{
+.size-section2nd {
   width: 100% !important;
 }
 
-.option-column{
+.option-column {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -279,18 +283,17 @@ button span{
   flex-direction: row;
 }
 
-
 /* 
 ====================================3rd option menu====================================== */
 
-.optionmenu3rd{
+.optionmenu3rd {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.size-section3rd{
+.size-section3rd {
   height: 100%;
   width: 100% !important;
 }
