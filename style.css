@@ -6,11 +6,13 @@ body {
 }
 
 .headerclass {
-  height: 50px;
+  height: 24px;
+  margin-top: 39px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ff6b82;
+  left: 59px;
 }
 
 span.horizontal-left,
@@ -22,7 +24,8 @@ span.horizontal-right {
 
 main {
   width: 600px;
-  margin: 20px auto;
+  margin: auto;
+  gap: 10px;
   background-color: #fff;
   padding: 20px;
 }
@@ -46,6 +49,7 @@ main {
 .unit-off {
   display: flex;
   margin-top: 25px;
+  height: 35px;
   justify-content: space-between;
   width: 100%;
   font-weight: 600;
@@ -57,17 +61,18 @@ main {
   font-weight: 600;
   line-height: 17px;
   text-align: center;
-  width: 80px;
+  justify-content: center;
 }
 
 .unitofff {
   background-color: #ff6b82;
   color: #ffffff;
-  width: 110%;
-  font-size: medium;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  font-size: small;
+  font-weight: 100 !important;
 }
 
 .unitoff {
@@ -79,12 +84,11 @@ main {
 }
 
 .price {
-    font-size: 25px;
+  font-size: 25px;
   font-weight: 600;
   color: #000000;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -94,13 +98,15 @@ main {
 }
 
 .checkbox-round {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 1.3em;
   height: 1.3em;
   background-color: white;
   border-radius: 50%;
   border: 1px solid #ff6b82;
-  appearance: none;
-  -webkit-appearance: none;
+  margin-top: 20px;
   outline: none;
   cursor: pointer;
   box-sizing: border-box;
@@ -109,13 +115,12 @@ main {
 .checkbox-round:checked {
   background-color: #ff6b82;
   border: 2px solid #ff6b82;
-  padding: 0.6em;
 }
 
 .standard-price {
   margin: 0;
   padding: 0;
-  margin-left: 50px;
+  margin-left: 40px;
   font-family: Inter;
   font-size: 25px;
   font-weight: 400;
@@ -154,15 +159,22 @@ select {
 .indicate-section p,
 .size-section h3,
 .color-section h3 {
-    font-size: 25px;
+  font-size: 25px;
   color: #333;
   font-weight: 400;
   padding: 0;
   height: 25px;
 }
 
-.indicate-section p{
-    justify-content: flex-start;
+.indicate-section,
+.size-section,
+.color-section {
+  height: auto;
+}
+
+.indicate-section p {
+  justify-content: flex-start;
+  font-size: 15px;
 }
 
 .size-section select,
@@ -174,7 +186,6 @@ select {
   box-sizing: border-box;
 }
 
-
 .optionhead,
 .optionmenu {
   display: flex;
@@ -184,12 +195,12 @@ select {
 }
 
 .optionhead {
-  justify-content: space-around;
-  margin-left: 20px;
+  justify-content: space-evenly;
 }
 
 .optionmenu {
-    font-size: 25px;
+  font-size: 25px;
+  height: auto;
   justify-content: space-evenly;
   margin-left: 50px;
 }
@@ -206,36 +217,36 @@ select {
 /* 
 ===========================================delevery and ammout========================== */
 
-.deliverycontainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 25px;
-    font-weight:400;
+.deliverycontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  font-weight: 400;
 }
 
-.deliverycontainer p:first-child{
-    color: #ff6b82;
+.deliverycontainer p:first-child {
+  color: #ff6b82;
 }
 
 /* 
 ================================================button======================================= */
 
-button{
-    width: 100%;
-    background-color: #ff6b82;
-    border-style: none;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    align-items: center;
-    color: #ffffff;
-    justify-content: center;
-    height: 40px;
+button {
+  width: 100%;
+  background-color: #ff6b82;
+  border-style: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  align-items: center;
+  color: #ffffff;
+  justify-content: center;
+  height: 40px;
 }
 
-button span{
-    margin-right: 10px;
+button span {
+  margin-right: 10px;
 }
