@@ -13,18 +13,17 @@
       <h1>YAY! It’s BOGO</h1>
       <span class="horizontal-right"></span>
     </div>
-
     <main class="main-container">
+<!-- 
+===========================================1st Box=====================================       -->
       <section class="box-container">
         <article class="box">
-          <div class="unit">
-            <div class="unit-off">
+          <div class="unit-container">
+            <div class="unit-box">
               <input class="checkbox-round" type="checkbox" id="unitCheckbox" />
-
-              <div class="unitoff">1 Unit</div>
-              <div class="unitofff">10% off</div>
+              <div class="unit-text">1 Unit</div>
+              <div class="unit-val">10% off</div>
             </div>
-
             <p class="standard-price">Standard Price</p>
           </div>
           <div class="price">
@@ -39,19 +38,19 @@
           </div>
           <div class="optionmenu">
             <div class="indicate-section">
-              <p>#1</p>
+              <p id="size-size">#1</p>
             </div>
 
             <div class="size-section">
-              <select>
+              <select class="size-option">
                 <option>S</option>
                 <option>M</option>
                 <option>L</option>
               </select>
             </div>
 
-            <div class="size-section" style="">
-              <select>
+            <div class="size-section">
+              <select class="size-option">
                 <option>Red</option>
                 <option>Blue</option>
                 <option>Green</option>
@@ -60,12 +59,83 @@
           </div>
         </div>
       </section>
-      
-      <div class="deliverycontainer">
-        <p>Free Delivery</p> <p>Total : $18.00 USD</p>
+
+<!-- ================================================2nd Box================================ -->
+
+<section class="box-container" id="handleclicksecond">
+  <article class="box">
+    <div class="unit-container">
+      <div class="unit-box">
+        <input class="checkbox-round" type="checkbox" id="unitCheckbox" />
+        <div class="unit-text">1 Unit</div>
+        <div class="unit-val">10% off</div>
+      </div>
+      <p class="standard-price">Standard Price</p>
     </div>
-    <button><span>+</span>Add to Cart</button>
+    <div class="price">
+      <p>$10.00 USD</p>
+      <p><del>$20.00 USD </del></p>
+    </div>
+  </article>
+  <div class="size-color-section">
+    <div class="optionhead">
+      <p>Size</p>
+      <p>colour</p>
+    </div>
+    <div class="optionmenu">
+      <div class="indicate-section">
+        <p id="size-size">#1</p>
+      </div>
+
+      <div class="size-section">
+        <select class="size-option">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+      </div>
+
+      <div class="size-section">
+        <select class="size-option">
+          <option>Red</option>
+          <option>Blue</option>
+          <option>Green</option>
+        </select>
+      </div>
+
+
+
+      <div class="indicate-section">
+        <p id="size-size">#1</p>
+      </div>
+
+      <div class="size-section">
+        <select class="size-option">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+      </div>
+
+      <div class="size-section">
+        <select class="size-option">
+          <option>Red</option>
+          <option>Blue</option>
+          <option>Green</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==============================================delivery section ================================= -->
+      <div class="deliverycontainer">
+        <p>Free Delivery</p>
+        <p>Total : $18.00 USD</p>
+      </div>
+<!-- 
+====================================================button ==================================== -->
+      <button><span>+</span>Add to Cart</button>
     </main>
-    
   </body>
 </html>

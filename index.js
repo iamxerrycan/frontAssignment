@@ -1,8 +1,16 @@
-document.getElementById("unitCheckbox").addEventListener("change", function () {
+document.addEventListener("DOMContentLoaded", function () {
   var sizeColorSection = document.querySelector(".size-color-section");
-  sizeColorSection.style.display = this.checked ? "flex" : "none";
-
+  var unitCheckbox = document.getElementById("unitCheckbox");
   var mainContainer = document.querySelector(".box-container");
-  var borderColor = this.checked ? "pink" : mainContainer.style.border = "1px solid #ccc"; 
-  mainContainer.style.border = `3px solid ${borderColor}`;
+
+  mainContainer.style.border = "1px solid #ccc";
+
+  sizeColorSection.style.display = "none";
+
+  unitCheckbox.addEventListener("change", function () {
+    sizeColorSection.style.display = this.checked ? "flex" : "none";
+
+    var borderColor = this.checked ? "pink" : "#ccc";
+    mainContainer.style.border = `3px solid ${borderColor}`;
+  });
 });
