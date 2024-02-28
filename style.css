@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+ 
 }
 
 .headerclass {
@@ -28,7 +29,7 @@ main {
   padding: 20px;
 }
 
-.box-container , .box-container2nd{
+.box-container , .box-container2nd , .box-container3rd{
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 20px;
@@ -128,18 +129,19 @@ main {
 
 /* ===========================select========================== */
 
-.size-color-section , .size-color-section2nd {
+.size-color-section , .size-color-section2nd , .size-color-section3rd{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 20px;
   display: none;
+  border: none !important;
   width: 350px;
   margin-left: 30px;
   flex-direction: column;
 }
 
-.size-section,
-.colour-section .indicate-section {
+.size-section, .size-section2nd
+.colour-section .indicate-section .size-section3rd{
   flex: 1;
 }
 
@@ -165,7 +167,7 @@ select {
 
 .indicate-section p,
 .size-section h3,
-.colour-section h3 {
+.colour-section h3 , .size-section2nd h3 , .size-color-section3rd h3{
     font-size: 25px;
   color: #333;
   font-weight: 400;
@@ -177,7 +179,7 @@ select {
 }
 
 .size-section select,
-.colour-section select {
+.colour-section select , .size-section2nd select , .size-color-section3rd select{
   width: 85%;
   height: 50px;
   border: 1px solid #ccc;
@@ -256,5 +258,47 @@ button span{
 
 
 
+/* ==================================2nd option menu================================ */
+
+.optionmenu2nd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.size-section2nd{
+  width: 100% !important;
+}
+
+.option-column{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
 
 
+/* 
+====================================3rd option menu====================================== */
+
+.optionmenu3rd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.size-section3rd{
+  height: 100%;
+  width: 100% !important;
+}
+
+/* .option-column{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+} */
