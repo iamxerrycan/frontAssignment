@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   var sizeColorSection = document.querySelector(".size-color-section");
   var sizeColorSection2nd = document.querySelector(".size-color-section2nd");
@@ -17,9 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
   mainContainer3rd.style.border = "1px solid #ccc";
   sizeColorSection3rd.style.display = "none";
 
-  // click event for 1stbox
-  mainContainer.addEventListener("click", function () {
-    unitCheckbox.checked = !unitCheckbox.checked; // Toggling
+  // change event for 1stbox
+  unitCheckbox.addEventListener("change", function () {
     unitCheckbox2nd.checked = false;
     unitCheckbox3rd.checked = false;
     sizeColorSection2nd.style.display = "none";
@@ -32,9 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContainer.style.border = `3px solid ${borderColor}`;
   });
 
-  // click event for 2ndbox
-  mainContainer2nd.addEventListener("click", function () {
-    unitCheckbox2nd.checked = !unitCheckbox2nd.checked; // Toggling
+  // change event for 2ndbox
+  unitCheckbox2nd.addEventListener("change", function () {
     unitCheckbox.checked = false;
     unitCheckbox3rd.checked = false;
     sizeColorSection.style.display = "none";
@@ -47,9 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
     mainContainer2nd.style.border = `3px solid ${borderColor}`;
   });
 
-  // click event for 3rdbox
-  mainContainer3rd.addEventListener("click", function () {
-    unitCheckbox3rd.checked = !unitCheckbox3rd.checked; // Toggling
+  // change event for 3rdbox
+  unitCheckbox3rd.addEventListener("change", function () {
     unitCheckbox.checked = false;
     unitCheckbox2nd.checked = false;
     sizeColorSection.style.display = "none";
