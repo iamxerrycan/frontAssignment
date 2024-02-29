@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
   var sizeColorSection = document.querySelector(".size-color-section");
   var sizeColorSection2nd = document.querySelector(".size-color-section2nd");

@@ -127,6 +127,38 @@ main {
   font-weight: 400;
 }
 
+
+.highlight-backend{
+  background-color: #D7445B;
+  ;
+  height: 15px;
+  width: 200px;
+  border-radius: 15px 15px 0 0;
+  z-index: 2;
+  position: relative;
+  left: 380px;
+  top: -25px;
+
+}
+.highlight{
+  z-index: 3;
+  position: relative;
+  left: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -40px;
+  background-color: #ff6b82;
+  color: white;
+  font-weight: bold;
+  height: 6px;
+  width: 150px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 13px;
+}
+
 /* ===========================select========================== */
 
 .size-color-section,
@@ -308,6 +340,8 @@ button span {
 
 /* 
 ================================responsive medeaquery ================================== */
+
+
 /* //i didnt get ui figma design for smaller device so i have done some basic styling  */
 
 @media only screen and (max-width: 600px) {
@@ -319,6 +353,23 @@ button span {
   }
   .box {
     height: 100%;
+  }
+
+  .box-container2nd {
+    position: relative;
+  }
+
+  .highlight-backend {
+    left: 60%;
+    width: 35%; 
+  }
+
+  .highlight {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left: 62.5%; 
+    width: 25%; 
   }
 
   .unit-container {
@@ -350,6 +401,22 @@ button span {
     padding: 5px;
   }
 
+  .box-container2nd {
+    position: relative;
+  }
+
+  .highlight-backend {
+    left: 10%;
+    width: 90%; 
+  }
+
+  .highlight {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    left: 15%; 
+    width: 70%; 
+  }
   .box {
     flex-direction: column; 
     height: 100%;
