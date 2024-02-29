@@ -305,3 +305,70 @@ button span {
   align-items: center;
   flex-direction: row;
 } */
+
+/* 
+================================responsive medeaquery ================================== */
+/* //i didnt get ui figma design for smaller device so i have done some basic styling  */
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 10px;
+  }
+  .box {
+    height: 100%;
+  }
+
+  .unit-container {
+    width: auto; 
+  }
+
+  .headerclass h1{
+    white-space: nowrap;
+  }
+  .indicate-section p,
+  .size-section h3,
+  .colour-section h3,
+  .size-section2nd h3,
+  .size-color-section2nd h3,
+  .size-color-section3rd h3 {
+    white-space: nowrap; 
+  }
+
+  .size-color-section ,.size-color-section2nd ,.size-color-section3rd{
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    width: 100%;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 5px;
+  }
+
+  .box {
+    flex-direction: column; 
+    height: 100%;
+  }
+
+  .headerclass h1{
+    white-space: nowrap;
+  }
+  .indicate-section p,
+  .size-section h3,
+  .colour-section h3,
+  .size-section2nd h3,
+  .size-color-section2nd h3,
+  .size-color-section3rd h3 {
+    white-space: nowrap; 
+  }
+
+  .size-color-section ,.size-color-section2nd ,.size-color-section3rd{
+    width: auto;
+  }
+
+}
